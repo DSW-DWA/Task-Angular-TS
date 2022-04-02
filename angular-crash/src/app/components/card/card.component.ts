@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Transactions } from 'src/app/transactions';
-
+import { TRANSACTIONS } from 'src/app/mock-transactions';
 
 @Component({
   selector: 'app-card',
@@ -8,10 +8,13 @@ import { Transactions } from 'src/app/transactions';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  @Input() transactions!: Transactions[]; 
+  transactions: Transactions[] = TRANSACTIONS;
   types: string[] = ["Income", "Investment", "Outcome", "Loan"];
-  constructor() { }
 
+  Checking = (type: string):boolean =>{
+    if (type == "Investment") return true; else return false;
+  }
+  constructor() { }
   ngOnInit(): void {
   }
 
