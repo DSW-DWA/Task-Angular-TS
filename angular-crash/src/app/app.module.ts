@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CardItemComponent } from './components/card-item/card-item.component';
 import { CardComponent } from './components/card/card.component';
+import { TabComponent } from './components/tab/tab.component';
 
 const appRoutes: Routes = [
-  {path: '', component: CardComponent}
+  {path: '', component: CardComponent},
+  {path: 'navigator', component: TabComponent}
 ]
 
 @NgModule({
@@ -16,7 +18,8 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     CardItemComponent,
-    CardComponent
+    CardComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,
