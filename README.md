@@ -4,6 +4,7 @@ Create [2.3 Summary page](https://docs.google.com/document/d/e/2PACX-1vQYdtpeUBz
 
 Use http-server to demostration my project
 ```
+cd angular-crash
 npm install http-server -g
 http-server dist/angular-crash
 ```
