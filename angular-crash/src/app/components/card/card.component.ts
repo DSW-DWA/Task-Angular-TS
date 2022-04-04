@@ -11,9 +11,7 @@ export class CardComponent implements OnInit {
   transactions: Transactions[] = TRANSACTIONS;
   types: string[] = ["Income", "Investment", "Outcome", "Loan"];
 
-  Checking = (type: string):boolean =>{
-    if (type == "Investment") return true; else return false;
-  }
+  
   constructor() { }
   ngOnInit(): void {
   }
