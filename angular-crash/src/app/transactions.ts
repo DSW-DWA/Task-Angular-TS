@@ -1,5 +1,5 @@
 
-
+//create interface
 export interface Transactions {
     "_id": string
     "amount": number
