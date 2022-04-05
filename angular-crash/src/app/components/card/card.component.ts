@@ -13,7 +13,11 @@ export class CardComponent implements OnInit {
   //create Array of type name 
   types: string[] = ["Income", "Investment", "Outcome", "Loan"];
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 4719fb09b9c4f2ef0f99e4658581f9a318981a75
   constructor() { }
   ngOnInit(): void {
   }
