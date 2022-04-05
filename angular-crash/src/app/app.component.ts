@@ -10,5 +10,7 @@ import { TRANSACTIONS } from 'src/app/mock-transactions';
 })
 export class AppComponent {
   title = 'angular-crash';
+
+  //creare Array of data
   transactions: Transactions[] = TRANSACTIONS;
 }

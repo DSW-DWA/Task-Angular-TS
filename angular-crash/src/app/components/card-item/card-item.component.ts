@@ -7,8 +7,11 @@ import { Transactions } from 'src/app/transactions';
   styleUrls: ['./card-item.component.scss']
 })
 export class CardItemComponent implements OnInit {
+  //input data
   @Input() transactions!: Transactions[];
   @Input() type!: string;
+
+  //Counter of type
   Counting = ():number =>{
     let k:number = this.transactions.length;
     for (let i = 0; i<this.transactions.length; i++){

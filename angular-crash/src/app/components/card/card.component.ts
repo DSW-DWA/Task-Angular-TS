@@ -9,11 +9,11 @@ import { TRANSACTIONS } from 'src/app/mock-transactions';
 })
 export class CardComponent implements OnInit {
   transactions: Transactions[] = TRANSACTIONS;
+
+  //create Array of type name 
   types: string[] = ["Income", "Investment", "Outcome", "Loan"];
 
-  Checking = (type: string):boolean =>{
-    if (type == "Investment") return true; else return false;
-  }
+
   constructor() { }
   ngOnInit(): void {
   }

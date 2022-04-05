@@ -8,7 +8,9 @@ import { Transactions } from 'src/app/transactions';
 })
 
 export class HeaderComponent implements OnInit {
-  @Input() transactions!: Transactions[]; 
+  //input data
+  @Input() transactions!: Transactions[];
+
   constructor() { }
 
   ngOnInit(): void {
