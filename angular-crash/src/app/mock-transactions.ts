@@ -1,5 +1,6 @@
 import { Transactions } from "./transactions"
 
+// export JSON
 export const TRANSACTIONS: Transactions[] = [
     {
       "_id": "62470064eb9c041621b78fee",
